@@ -21,10 +21,13 @@ public class AgendaElectronica {
         int opcion =0;
         Scanner leer = new Scanner (System.in);
         Menu menu = new Menu();
+        Menu menu2 = new Menu();
         String ckmail = "";
+        String correo = "";
+        String nombre = "";
         System.out.println("B I E N V E N I D O   A   T U   A G E N D A   E L E C T R O N I C A");
         System.out.println("********************************************************************");
-        System.out.println("Ingrese su correo: ");
+        System.out.print("Ingrese su correo: ");
         ckmail = leer.next();
         
         do {
@@ -33,14 +36,20 @@ public class AgendaElectronica {
             opcion = leer.nextInt();
             switch (opcion){
                 case 1:
-                                   
-                    System.out.println("Ingrese sus datos");
-                    System.out.println("Nombre : ");
-                    ckmail = leer.nextLine();
-                    
-                    break;
-                    
                    
+                    
+                    do{
+                    menu2.imprimircorreo();
+                    correo = leer.nextLine();
+                    System.out.println("Ingrese sus datos");
+                    System.out.print("Nombre correo : ");
+                    correo = leer.nextLine();
+                    System.out.print("Nombre : ");
+                    nombre = leer.nextLine();
+                    break;
+                    }while(opcion !=4);
+                    
+                    
                 case 2:
                     System.out.println(menu.getAllEmails());
                     break;

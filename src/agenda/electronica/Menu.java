@@ -26,7 +26,7 @@ public class Menu {
         System.out.println("4.- Salir.");
         System.out.println("-----------------------------");
         int codigo = s.nextInt();
-        
+              
         /*
         1:
         emails e = new emails();
@@ -34,6 +34,25 @@ public class Menu {
 
         */
     }
+    public void imprimircorreo(){
+        System.out.println("-----------------------------");
+        System.out.println("1.- Ingresa Correo.");
+        System.out.println("2.- Ingresa Nombre.");
+        System.out.println("3.- Ingresa Agenda ");
+        System.out.println("4.- Salir.");
+        System.out.println("-----------------------------");
+        int codigo = s.nextInt();
+              
+        /*
+        1:
+        emails e = new emails();
+        e.insertagenda(3, "Usermails", "Namemails");
+
+        */
+    }
+    
+    
+    
     
     public String getAllEmails(){
         emails emp = new emails();
@@ -49,3 +68,4 @@ public class Menu {
     
     
 }
+
